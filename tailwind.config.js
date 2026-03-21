@@ -5,7 +5,6 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"A2Z"', "sans-serif"],
-        serif: ['"puntino-star"', "serif"],
       },
       colors: {
         bg: "#191919",

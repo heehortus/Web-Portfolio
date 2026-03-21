@@ -3,59 +3,10 @@ export const siteData = {
   role: "UIUX Designer",
   location: "Seoul",
   email: "hee.hortus@gmail.com",
-  bio: [
-    "I'm a Seoul-based product and visual designer with a background in communication design. I specialize in turning complex problems into clear, elegant digital products.",
-    "My work sits at the intersection of brand strategy and UX — making sure that how something looks is always in service of how it works.",
-    "Previously at Kakao, Line, and a handful of early-stage startups. Now available for select freelance projects and full-time opportunities.",
-  ],
-  stats: [
-    { num: "6+", label: "Years experience" },
-    { num: "40+", label: "Projects delivered" },
-    { num: "12", label: "Brand identities" },
-    { num: "3", label: "Design awards" },
-  ],
-  skills: [
-    {
-      abbr: "UI",
-      name: "UI Design",
-      desc: "Pixel-precise interface design that balances aesthetics with usability.",
-      tools: ["Figma", "Sketch", "Design Systems"],
-    },
-    {
-      abbr: "UX",
-      name: "UX Research",
-      desc: "User interviews, usability testing, and journey mapping to ground decisions in real needs.",
-      tools: ["Maze", "Hotjar", "Notion"],
-    },
-    {
-      abbr: "Br",
-      name: "Brand Identity",
-      desc: "Visual identities that feel honest, distinctive, and built to last.",
-      tools: ["Illustrator", "Photoshop", "Brand Guide"],
-    },
-    {
-      abbr: "Pr",
-      name: "Prototyping",
-      desc: "High-fidelity interactive prototypes that bring concepts to life before development.",
-      tools: ["Figma", "Framer", "Principle"],
-    },
-    {
-      abbr: "Mo",
-      name: "Motion Design",
-      desc: "Purposeful animation that guides attention and adds delight without distraction.",
-      tools: ["After Effects", "Lottie", "CSS"],
-    },
-    {
-      abbr: "Fe",
-      name: "Frontend Basics",
-      desc: "Enough code to collaborate effectively with engineers and bring ideas to life.",
-      tools: ["HTML/CSS", "React", "Tailwind"],
-    },
-  ],
   projects: [
     {
       num: "01",
-      name: "Bloom — Health App Redesign",
+      name: "STOOV — Busking Map Service",
       desc: "End-to-end UX overhaul of a mental wellness platform, increasing retention by 34%",
       image: '',
       tags: ["UX Design", "Mobile", "Research"],
@@ -63,7 +14,7 @@ export const siteData = {
     },
     {
       num: "02",
-      name: "Olio — Brand Identity System",
+      name: "CLACK — GOODS Resell Service Redesign",
       desc: "Visual identity and design system for a Seoul-based food-tech startup",
       tags: ["Branding", "Design System"],
       image: '',
@@ -71,17 +22,9 @@ export const siteData = {
     },
     {
       num: "03",
-      name: "Nori — E-commerce Experience",
+      name: "Wecare — Senior Daily Management Service",
       desc: "Conversion-focused product pages and checkout flow for a D2C lifestyle brand",
       tags: ["UI Design", "E-commerce", "Prototyping"],
-      image: '',
-      url: "#",
-    },
-    {
-      num: "04",
-      name: "Veil — SaaS Dashboard",
-      desc: "Data-heavy B2B dashboard with a design system for a cybersecurity platform",
-      tags: ["UI Design", "Dashboard", "B2B"],
       image: '',
       url: "#",
     },

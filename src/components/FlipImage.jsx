@@ -39,8 +39,8 @@ export default function FlipImage() {
           }}
         >
           <img
-            src="/profile.jpg"
-            alt="Graphic"
+            src="./profile.jpg"
+            alt="Profile"
             className="w-full h-full object-cover object-top filter grayscale"
           />
         </div>

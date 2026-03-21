@@ -2,20 +2,18 @@ import SectionLabel from './SectionLabel'
 
 export default function Projects({ projects }) {
   return (
-    <section id="projects" className="border-t border-border max-w-[1100px] mx-auto px-6 md:px-16 py-24">
+    <section id="projects" className="border-t border-border min-h-screen mx-auto px-6 md:px-16 py-24">
       <SectionLabel>Projects</SectionLabel>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {projects.map((project, i) => (
+      <div className="grid grid-cols-1 gap-6">
+        {projects.map((project) => (
           <a
             key={project.name}
             href={project.url}
-            className={`group block overflow-hidden border border-border hover:border-fg transition-colors duration-300
-              ${i === 0 ? 'md:col-span-2' : ''}
-            `}
+            className="group block overflow-hidden border border-border hover:border-fg transition-colors duration-300"
           >
             {/* 썸네일 */}
-            <div className={`w-full overflow-hidden bg-[#f0ede8] ${i === 0 ? 'h-[420px]' : 'h-[260px]'}`}>
+            <div className="w-full overflow-hidden bg-[#f0ede8] h-[400px] md:h-[250px] lg:h-[500px]">
               {project.image ? (
                 <img
                   src={project.image}
