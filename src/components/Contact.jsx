@@ -48,7 +48,7 @@ export default function Contact({ data }) {
 
       <div className="absolute bottom-2 left-0 right-0 py-4 border-t border-border flex justify-between px-6 md:px-16 text-[12px] text-muted tracking-[0.04em]">
         <span>© {year} {data.name}</span>
-        <span>Designed &amp; built with care — Seoul, KR</span>
+        <span>Jeong Hee Won UXUI &amp; Product Portfolio — 2026</span>
       </div>
     </section>
   )
