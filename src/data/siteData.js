@@ -30,10 +30,10 @@ export const siteData = {
     },
   ],
   social: [
-    { label: "LinkedIn", url: "#" },
-    { label: "Behance", url: "#" },
-    { label: "Dribbble", url: "#" },
-    { label: "Instagram", url: "#" },
+    { label: "LinkedIn(준비중)", url: "#" },
+    { label: "Github", url: "https://github.com/heehortus" },
+    { label: "Blog", url: "https://hortus-log.vercel.app/" },
+    { label: "Instagram", url: "https://www.instagram.com/xeehortus" },
     { label: "Resume ↓", url: "#" },
   ],
 };

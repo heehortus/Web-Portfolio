@@ -5,20 +5,20 @@ export default function Contact({ data }) {
   return (
     <section
       id="contact"
-      className="relative border-t border-border min-h-screen flex flex-col items-center justify-center px-6 md:px-16 text-center"
+      className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-16 text-center"
     >
       <div className="flex justify-center">
         <SectionLabel>Contact</SectionLabel>
       </div>
 
       <h2 className="font-sans text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.1] tracking-tight mt-0 mb-6">
-        Let's make something
+        함께 일할 동료를 찾고 계신가요?
         <br />
-        <em className="text-muted not-italic">worth making.</em>
+        <em className="text-muted not-italic">제게 연락주세요!</em>
       </h2>
 
-      <p className="text-muted text-[16px] mb-10 max-w-[400px] mx-auto">
-        Open to new projects, collaborations, and conversations about design.
+      <p className="text-muted text-[16px] mb-10 max-w-[800px] mx-auto">
+        또는 편하게 이야기 나누고 싶으신가요? 포트폴리오, 개발, 디자인 뭐든지 좋아요. 언제든지 연락주세요.
       </p>
 
       <div className="flex justify-center gap-4 mb-10">
@@ -52,7 +52,7 @@ export default function Contact({ data }) {
           ))}
       </div>
 
-      <div className="absolute bottom-2 left-0 right-0 py-4 border-t border-border flex justify-between px-6 md:px-16 text-[12px] text-muted tracking-[0.04em]">
+      <div className="absolute bottom-0 left-0 right-0 py-4 border-t border-border flex justify-between px-6 md:px-16 text-[12px] text-muted tracking-[0.04em] backdrop-blur-md">
         <span>
           © {year} {data.name}
         </span>
