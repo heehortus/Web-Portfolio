@@ -15,7 +15,7 @@ export default function Navbar({ name }) {
           </a>
         ))}
         <a
-          href="public\resume.pdf"
+          href="public/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[13px] px-4 py-2 border border-fg text-fg hover:bg-fg hover:text-bg transition-colors duration-200 tracking-[0.05em]"
