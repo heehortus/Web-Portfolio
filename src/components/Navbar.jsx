@@ -4,7 +4,7 @@ export default function Navbar({ name }) {
       <span className="text-[13px] tracking-[0.12em] uppercase text-muted font-medium">
         {name}
       </span>
-      <div className="flex gap-8">
+      <div className="hidden md:flex gap-8">
         {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
           <a
             key={item}

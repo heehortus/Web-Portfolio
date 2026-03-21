@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"DM Serif Display"', 'serif'],
-        sans: ['"DM Sans"', 'sans-serif'],
+        sans: ['"A2Z"', 'sans-serif'],
       },
       colors: {
         bg: '#faf9f7',

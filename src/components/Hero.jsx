@@ -12,12 +12,12 @@ export default function Hero({ data }) {
       </p>
 
       <h1
-        className="font-serif text-[clamp(3rem,7vw,6.5rem)] leading-[1.05] tracking-tight
+        className="font-sans text-[clamp(3rem,7vw,6.5rem)] leading-[1.1] tracking-tight
                    opacity-0 animate-fade-up [animation-delay:350ms]"
       >
-        Creating spaces<br />
-        where <em className="text-muted not-italic">design</em><br />
-        meets purpose.
+        디자인과<br />
+        목적이 <em className="text-muted not-italic">만나는</em><br />
+        공간을 만듭니다.
       </h1>
 
       <p
@@ -52,7 +52,7 @@ export default function Hero({ data }) {
       </div>
 
       {/* Decorative number */}
-      <span className="absolute right-16 bottom-12 font-serif text-[10rem] leading-none text-fg/[0.06] select-none pointer-events-none">
+      <span className="absolute right-16 bottom-12 font-sans text-[10rem] leading-none text-fg/[0.06] select-none pointer-events-none">
         01
       </span>
     </section>

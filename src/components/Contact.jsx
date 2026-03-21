@@ -7,7 +7,7 @@ export default function Contact({ data }) {
         <SectionLabel>Contact</SectionLabel>
       </div>
 
-      <h2 className="font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.1] tracking-tight mt-0 mb-6">
+      <h2 className="font-sans text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.1] tracking-tight mt-0 mb-6">
         Let's make something<br />
         <em className="text-muted not-italic">worth making.</em>
       </h2>

@@ -5,7 +5,7 @@ export default function Skills({ skills }) {
     <section id="skills" className="border-t border-border max-w-[1100px] mx-auto px-16 py-24">
       <SectionLabel>Skills</SectionLabel>
 
-      <div className="grid grid-cols-3 gap-[2px] mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2px] mt-4">
         {skills.map((skill) => (
           <div
             key={skill.name}
