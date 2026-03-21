@@ -1,51 +1,53 @@
-import { useState } from 'react'
 import SectionLabel from './SectionLabel'
 
 export default function Projects({ projects }) {
-  const [hovered, setHovered] = useState(null)
-
   return (
     <section id="projects" className="border-t border-border max-w-[1100px] mx-auto px-6 md:px-16 py-24">
       <SectionLabel>Projects</SectionLabel>
 
-      <div>
-        {projects.map((project) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {projects.map((project, i) => (
           <a
             key={project.name}
             href={project.url}
-            className={`
-              grid grid-cols-[1fr_auto] items-center gap-8
-              py-7 border-b border-border first:border-t first:border-border
-              no-underline text-fg
-              transition-all duration-200
-              ${hovered === project.name ? 'pl-4' : 'pl-0'}
+            className={`group block overflow-hidden border border-border hover:border-fg transition-colors duration-300
+              ${i === 0 ? 'md:col-span-2' : ''}
             `}
-            onMouseEnter={() => setHovered(project.name)}
-            onMouseLeave={() => setHovered(null)}
           >
-            <div>
-              <div className="font-medium text-[17px]">{project.name}</div>
-              <div className="text-[13px] text-muted mt-[3px]">{project.desc}</div>
-              <div className="flex flex-wrap gap-2 mt-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-[11px] px-[10px] py-[3px] bg-bg text-muted border border-border"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+            {/* 썸네일 */}
+            <div className={`w-full overflow-hidden bg-[#f0ede8] ${i === 0 ? 'h-[420px]' : 'h-[260px]'}`}>
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-muted text-[13px] tracking-widest uppercase">
+                  No image
+                </div>
+              )}
             </div>
 
-            <div
-              className={`
-                w-9 h-9 flex items-center justify-center border text-[16px] text-muted flex-shrink-0
-                transition-all duration-200
-                ${hovered === project.name ? 'bg-fg text-bg border-fg' : 'border-border'}
-              `}
-            >
-              →
+            {/* 카드 하단 정보 */}
+            <div className="p-6 flex justify-between items-start">
+              <div>
+                <div className="font-medium text-[16px] mb-1">{project.name}</div>
+                <div className="text-[13px] text-muted">{project.desc}</div>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-[11px] px-[10px] py-[3px] bg-bg text-muted border border-border"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <span className="text-[20px] text-muted group-hover:text-fg group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-200 ml-4 flex-shrink-0">
+                ↗
+              </span>
             </div>
           </a>
         ))}

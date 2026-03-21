@@ -8,7 +8,7 @@ export default function About({ data }) {
       <div className="grid grid-cols-2 gap-20 items-start">
         {/* Left — Profile */}
         <img
-          src="public\profile.jpg"
+          src="/profile.jpg"
           alt="Profile"
           className="w-full aspect-[3/4] object-cover rounded-full grayscale"
         />

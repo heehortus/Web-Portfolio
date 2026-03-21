@@ -11,6 +11,7 @@
   },
   "homepage": "https://heehortus.github.io/Web-Portfolio/",
   "dependencies": {
+    "framer-motion": "^12.38.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

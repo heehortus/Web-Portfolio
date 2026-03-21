@@ -1,20 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,jsx}'],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"A2Z"', 'sans-serif'],
+        sans: ['"A2Z"', "sans-serif"],
+        serif: ['"puntino-star"', "serif"],
       },
       colors: {
-        bg: '#faf9f7',
-        fg: '#1a1916',
-        muted: '#8a8880',
-        accent: '#c8a96e',
-        card: '#ffffff',
-        border: 'rgba(26,25,22,0.10)',
+        bg: "#191919",
+        fg: "#f6f5f5",
+        muted: "#7a7a7a",
+        accent: "#24e30e",
+        card: "#1a1916",
+        border: "rgba(59,59,59,0.60)",
       },
     },
   },
   plugins: [],
-}
+};

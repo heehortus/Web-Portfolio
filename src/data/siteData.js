@@ -57,6 +57,7 @@ export const siteData = {
       num: "01",
       name: "Bloom — Health App Redesign",
       desc: "End-to-end UX overhaul of a mental wellness platform, increasing retention by 34%",
+      image: '',
       tags: ["UX Design", "Mobile", "Research"],
       url: "#",
     },
@@ -65,6 +66,7 @@ export const siteData = {
       name: "Olio — Brand Identity System",
       desc: "Visual identity and design system for a Seoul-based food-tech startup",
       tags: ["Branding", "Design System"],
+      image: '',
       url: "#",
     },
     {
@@ -72,6 +74,7 @@ export const siteData = {
       name: "Nori — E-commerce Experience",
       desc: "Conversion-focused product pages and checkout flow for a D2C lifestyle brand",
       tags: ["UI Design", "E-commerce", "Prototyping"],
+      image: '',
       url: "#",
     },
     {
@@ -79,6 +82,7 @@ export const siteData = {
       name: "Veil — SaaS Dashboard",
       desc: "Data-heavy B2B dashboard with a design system for a cybersecurity platform",
       tags: ["UI Design", "Dashboard", "B2B"],
+      image: '',
       url: "#",
     },
   ],
