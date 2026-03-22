@@ -13,7 +13,7 @@ export default function Projects({ projects }) {
             href={project.url}
             className="group block overflow-hidden transition-colors duration-300"
           >
-            <div className="w-full overflow-hidden bg-card h-[480px]"
+            <div className="w-full overflow-hidden bg-card sm:h-[480px] h-[300px]"
               style={{backgroundColor: project.bg || "1a1916"}}>
               {project.image ? (
                 <img
