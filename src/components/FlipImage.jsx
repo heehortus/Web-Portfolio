@@ -18,19 +18,19 @@ export default function FlipImage() {
           transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
         }}
       >
-        {/* 앞면 — 프로필 사진 */}
+        {/* 앞면 — 그래픽 사진 */}
         <div
           className="absolute inset-0 overflow-hidden rounded-[16px 0px]"
           style={{ backfaceVisibility: 'hidden' }}
         >
           <img
-            src="/graphic.jpg"
+            src="image/comma.jpg"
             alt="graphic"
             className="w-full h-full object-cover"
           />
         </div>
 
-        {/* 뒷면 — 그래픽 이미지 (나중에 교체) */}
+        {/* 뒷면 — 프로필 사진 */}
         <div
           className="absolute inset-0 overflow-hidden rounded-[16px 0px] bg-[#f0ede8]"
           style={{
@@ -39,7 +39,7 @@ export default function FlipImage() {
           }}
         >
           <img
-            src="./profile.jpg"
+            src="image/profile.jpg"
             alt="Profile"
             className="w-full h-full object-cover object-top filter grayscale"
           />

@@ -22,18 +22,25 @@ const cards = [
   {
     id: 2,
     content: (
-      <div className="w-full h-full flex flex-col justify-center p-8 gap-3">
-        <div className="text-[11px] tracking-[0.15em] uppercase text-muted mb-2">
-          Skills
-        </div>
-        {["Figma", "Photoshop", "Notion", "React", "HTML / CSS"].map(
-          (skill) => (
-            <div key={skill} className="flex items-center gap-3 text-[14px]">
-              <span className="w-1 h-1 rounded-full bg-accent flex-shrink-0" />
-              {skill}
-            </div>
-          )
-        )}
+      <div className="w-full h-full flex flex-col justify-center items-center">
+        <div className="grid grid-cols-2 gap-x-0">
+        {[
+          { name: "Figma", icon: "./icons/figma.svg" },
+          { name: "Photoshop", icon: "./icons/photoshop.svg" },
+          { name: "Notion", icon: "./icons/notion.svg" },
+          { name: "React", icon: "./icons/react.svg" },
+          { name: "Illustrator", icon: "./icons/illust.svg" },
+        ].map((skill) => (
+          <div key={skill.name} className="flex items-center">
+            <img
+              key={skill.name}
+              src={skill.icon}
+              alt={skill.name}
+              className="w-36 h-36"
+            />
+          </div>
+        ))}
+      </div>
       </div>
     ),
   },
@@ -73,7 +80,7 @@ const CardStack = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({ paginate }));
 
   return (
-    <div className="relative md:w-[320px] md:h-[400px] lg:w-[380px] lg:h-[480px]">
+    <div className="relative md:w-[320px] md:h-[400px] lg:w-[360px] lg:h-[480px]">
       {/* 뒷 카드 */}
       <div
         className="absolute inset-0 border border-border bg-[#ffffff] rounded-[16px] overflow-hidden"

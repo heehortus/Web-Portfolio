@@ -24,12 +24,12 @@ export default function Contact({ data }) {
       <div className="flex justify-center gap-4 mb-10">
         <a
           href={`mailto:${data.email}`}
-          className="inline-block px-7 py-3 bg-fg text-bg text-[11px] sm:text-[13px] font-medium tracking-[0.05em] hover:opacity-80 transition-opacity"
+          className="inline-block px-7 py-3 bg-fg text-bg text-[11px] sm:text-[13px] font-medium tracking-[0.05em] hover:bg-accent transition-opacity"
         >
           {data.email}
         </a>
         <a
-          href="public\resume.pdf"
+          href="public/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-7 py-3 border border-fg text-fg text-[11px] sm:text-[13px] font-medium tracking-[0.05em] hover:bg-fg hover:text-bg transition-colors duration-200"

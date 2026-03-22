@@ -11,7 +11,7 @@ export default function Projects({ projects }) {
           <a
             key={project.name}
             href={project.url}
-            className="group block overflow-hidden border border-border hover:border-fg transition-colors duration-300"
+            className="group block overflow-hidden transition-colors duration-300"
           >
             <div className="w-full overflow-hidden bg-card h-[260px]">
               {project.image ? (
