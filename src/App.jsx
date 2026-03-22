@@ -1,6 +1,5 @@
-import { useEffect } from 'react'
+import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 import Cursor from "./components/Cursor";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -21,6 +20,7 @@ function AppRoutes() {
         document
           .getElementById(location.state.scrollTo)
           ?.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState({}, "");
       }, 300);
     }
   }, [location]);
@@ -41,29 +41,27 @@ function AppRoutes() {
           />
         </div>
       )}
-      <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          <Route
-            path="/"
-            element={
-              <main className="relative z-10 overflow-x-hidden">
-                <Hero data={siteData} />
-                <Projects projects={siteData.projects} />
-                <Contact data={siteData} />
-              </main>
-            }
-          />
-          <Route
-            path="/project/:slug"
-            element={
-              <ProjectDetail
-                key={location.pathname}
-                projects={siteData.projects}
-              />
-            }
-          />
-        </Routes>
-      </AnimatePresence>
+      <Routes location={location} key={location.pathname}>
+        <Route
+          path="/"
+          element={
+            <main className="relative z-10 overflow-x-hidden">
+              <Hero data={siteData} />
+              <Projects projects={siteData.projects} />
+              <Contact data={siteData} />
+            </main>
+          }
+        />
+        <Route
+          path="/project/:slug"
+          element={
+            <ProjectDetail
+              key={location.pathname}
+              projects={siteData.projects}
+            />
+          }
+        />
+      </Routes>
     </>
   );
 }
