@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Particles from "./components/Particles";
 import ProjectDetail from "./components/ProjectDetail";
-import ScrollToTop from "./components/scrollToTop";
+import ScrollToTop from "./components/ScrollToTop";
 import { siteData } from "./data/siteData";
 
 function AppRoutes() {
