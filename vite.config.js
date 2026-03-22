@@ -5,5 +5,4 @@ import remarkGfm from "remark-gfm";
 
 export default defineConfig({
   plugins: [mdx({ remarkPlugins: [remarkGfm] }), react()],
-  base: "/Web-Portfolio/",
 });

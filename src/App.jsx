@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Cursor from "./components/Cursor";
@@ -13,6 +14,16 @@ import { siteData } from "./data/siteData";
 function AppRoutes() {
   const location = useLocation();
   const isHome = location.pathname === "/";
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      setTimeout(() => {
+        document
+          .getElementById(location.state.scrollTo)
+          ?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+  }, [location]);
 
   return (
     <>
@@ -44,7 +55,12 @@ function AppRoutes() {
           />
           <Route
             path="/project/:slug"
-            element={<ProjectDetail projects={siteData.projects} />}
+            element={
+              <ProjectDetail
+                key={location.pathname}
+                projects={siteData.projects}
+              />
+            }
           />
         </Routes>
       </AnimatePresence>

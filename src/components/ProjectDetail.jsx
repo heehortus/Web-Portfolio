@@ -1,9 +1,10 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { lazy, Suspense } from 'react'
 
 export default function ProjectDetail({ projects }) {
   const { slug } = useParams()
+  const navigate = useNavigate()
   const project = projects.find((p) => p.slug === slug)
 
   const MDXContent = lazy(() => import(`../projects/${slug}.mdx`))
@@ -22,12 +23,12 @@ export default function ProjectDetail({ projects }) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.4 }}
     >
-      <Link
-        to="/"
+      <button
+        onClick={() => navigate(-1)}
         className="text-[13px] text-muted tracking-[0.05em] hover:text-fg transition-colors duration-200 flex items-center gap-2 mb-16"
       >
         ← Back
-      </Link>
+      </button>
 
       <div className="mb-12">
         <div className="flex flex-wrap gap-2 mb-4">
@@ -51,7 +52,6 @@ export default function ProjectDetail({ projects }) {
         </div>
       )}
 
-      {/* MDX 내용 */}
       <div className="prose prose-invert max-w-[800px]">
         <Suspense fallback={<div className="text-muted">Loading...</div>}>
           <MDXContent />
