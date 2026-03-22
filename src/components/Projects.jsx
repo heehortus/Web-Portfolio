@@ -13,12 +13,13 @@ export default function Projects({ projects }) {
             href={project.url}
             className="group block overflow-hidden transition-colors duration-300"
           >
-            <div className="w-full overflow-hidden bg-card h-[260px]">
+            <div className="w-full overflow-hidden bg-card h-[480px]"
+              style={{backgroundColor: project.bg || "1a1916"}}>
               {project.image ? (
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                  className="w-full h-full object-contain group-hover:scale-[1.03] transition-transform duration-500"
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-muted text-[13px] tracking-widest uppercase">
