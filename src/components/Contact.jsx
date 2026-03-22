@@ -29,7 +29,7 @@ export default function Contact({ data }) {
           {data.email}
         </a>
         <a
-          href="src/assets/resume.pdf"
+          href="public/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-7 py-3 border border-fg text-fg text-[11px] sm:text-[13px] font-medium tracking-[0.05em] hover:bg-fg hover:text-bg transition-colors duration-200"
