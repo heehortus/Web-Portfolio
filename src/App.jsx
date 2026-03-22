@@ -1,3 +1,4 @@
+import NotFound from './components/NotFound'
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Cursor from "./components/Cursor";
@@ -61,6 +62,7 @@ function AppRoutes() {
             />
           }
         />
+        <Route path="/404" element={<NotFound />} />
       </Routes>
     </>
   );
