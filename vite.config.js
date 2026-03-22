@@ -1,7 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import mdx from "@mdx-js/rollup";
+import remarkGfm from "remark-gfm";
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/Web-Portfolio/'
-})
+  plugins: [mdx({ remarkPlugins: [remarkGfm] }), react()],
+  base: "/Web-Portfolio/",
+});

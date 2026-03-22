@@ -15,9 +15,9 @@ export default {
         border: "rgba(59,59,59,0.60)",
       },
       screens: {
-        xl2: '1400px',
+        xl2: "1400px",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

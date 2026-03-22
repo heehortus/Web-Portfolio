@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SectionLabel from "./SectionLabel";
 
 export default function Projects({ projects }) {
@@ -8,9 +9,9 @@ export default function Projects({ projects }) {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project) => (
-          <a
+          <Link
             key={project.name}
-            href={project.url}
+            to={`/project/${project.slug}`}
             className="group block overflow-hidden transition-colors duration-300"
           >
             <div className="w-full overflow-hidden bg-card sm:h-[480px] h-[300px]"
@@ -49,7 +50,7 @@ export default function Projects({ projects }) {
                 ↗
               </span>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
