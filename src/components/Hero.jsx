@@ -9,7 +9,7 @@ export default function Hero({ data }) {
       id="home"
       className="relative min-h-screen flex flex-col justify-center max-w-[1900px] mx-auto px-16 pt-32 pb-32"
     >
-      <h1 className="font-sans text-[clamp(3rem,7vw,6.5rem)] leading-[1.1] tracking-tight">
+      <h1 className="font-sans text-[clamp(2rem,7vw,6.5rem)] leading-[1.1] tracking-tight">
         <span className="block opacity-0 animate-fade-up [animation-delay:200ms]">
           디자인과
         </span>
@@ -26,10 +26,10 @@ export default function Hero({ data }) {
       </p>
 
       {/* 카드 스택 */}
-      <div className="hidden lg:block absolute right-48 top-[50%] -translate-y-1/2">
+      <div className="hidden xl2:block absolute right-48 top-[50%] -translate-y-1/2">
         <CardStack ref={cardRef} />
         <div
-          className="w-64 cursor-pointer"
+          className="w-24 cursor-pointer"
           onClick={() => cardRef.current?.paginate(1)}
         />
       </div>

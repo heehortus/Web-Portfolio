@@ -30,7 +30,7 @@ export const siteData = {
     },
   ],
   social: [
-    { label: "LinkedIn(준비중)", url: "#" },
+    { label: "LinkedIn(준비중)", url: "https://www.linkedin.com/in/hee-won-jeong-a4703b3b9" },
     { label: "Github", url: "https://github.com/heehortus" },
     { label: "Blog", url: "https://hortus-log.vercel.app/" },
     { label: "Instagram", url: "https://www.instagram.com/xeehortus" },

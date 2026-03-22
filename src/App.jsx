@@ -24,7 +24,7 @@ export default function App() {
 
       <Cursor />
       <Navbar name={siteData.name} />
-      <main>
+      <main className="relative z-10 overflow-x-hidden">
         <Hero data={siteData} />
         <Projects projects={siteData.projects} />
         <Contact data={siteData} />

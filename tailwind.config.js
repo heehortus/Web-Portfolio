@@ -14,6 +14,9 @@ export default {
         card: "#1a1916",
         border: "rgba(59,59,59,0.60)",
       },
+      screens: {
+        xl2: '1400px',
+      },
     },
   },
   plugins: [],
