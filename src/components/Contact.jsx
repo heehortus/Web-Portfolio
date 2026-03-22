@@ -12,9 +12,9 @@ export default function Contact({ data }) {
       </div>
 
       <h2 className="font-sans text-[clamp(1.5rem,5vw,4.5rem)] leading-[1.4] tracking-tight mt-0 mb-6">
-        함께 일할 동료를 찾고 계신가요?
+        똑똑,
         <br />
-        <em className="text-muted not-italic">제게 연락주세요!</em>
+        <em className="text-muted not-italic">함께 일할 동료를 찾고 계신가요?</em>
       </h2>
 
       <p className="text-muted text-[12px] sm:text-[16px] mb-10 max-w-[600px] mx-auto">
